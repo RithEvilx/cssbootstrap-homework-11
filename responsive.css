@@ -1,0 +1,117 @@
+/* Desktop */
+@media (min-width: 1700px) {
+}
+
+/* Middle Desktop and Laptop */
+@media (max-width: 1200px) {
+}
+
+/* Laptop */
+@media (max-width: 1440px) {
+}
+
+/* Ipad Pro */
+@media (max-width: 1024px) {
+}
+@media (max-width: 990px) {
+  .navbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Ipad */
+@media (max-width: 768px) {
+  .about .timeline-text h4 {
+    font-size: 18px;
+  }
+  .about .timeline-text p {
+    font-size: 12px;
+  }
+  .about .timeline li .image img,
+  .about .timeline li:last-child .image {
+    width: 110px;
+    height: 110px;
+    transform: translateX(55px);
+  }
+  .about .timeline li.right .image img {
+    transform: translateX(-55px);
+  }
+  .about .timeline li .image::before {
+    bottom: -85px;
+  }
+  .about .timeline li:last-child .image {
+    font-size: 14px;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .service-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-box .card .card-body .text {
+    font-size: 15px;
+  }
+  .header-title .text {
+    font-size: 15px;
+  }
+  .header-title .title {
+    font-size: 35px;
+  }
+
+  .about .timeline li .image img,
+  .about .timeline li:last-child .image {
+    width: 80px;
+    height: 80px;
+  }
+  .about .timeline li {
+    flex-direction: row-reverse;
+    margin-left: 20px;
+  }
+  .about .timeline li .timeline-text {
+    text-align: start;
+    margin-left: 45px;
+  }
+  .about .timeline li.right {
+    float: none;
+  }
+  .about .timeline li.right,
+  .about .timeline li:last-child,
+  .about .timeline li:nth-child(3) {
+    margin-top: 0;
+  }
+  .about .timeline li .image img,
+  .about .timeline li.right .image img {
+    transform: translateX(40px);
+  }
+  .about .timeline li .image::before {
+    right: 0;
+    bottom: 0px;
+  }
+
+  .about .timeline li.right .image::before {
+    left: 100%;
+    bottom: -70px;
+  }
+  .about .timeline li:last-child .image {
+    transform: translateX(-110px);
+  }
+  .about .timeline li:last-child .image {
+    font-size: 11px;
+  }
+}
+
+/* Phone 6,7,8 + plus */
+@media (max-width: 480px) {
+}
+
+/* Phone: Small Screen */
+@media (max-width: 320px) {
+}

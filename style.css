@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Roboto Slab', serif; */
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+header {
+  background-color: #212529;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.bar {
+  font-size: 12px;
+}
+.navbar h4 {
+  font-family: "Kaushan Script", cursive;
+  color: #fed136;
+  font-weight: normal;
+}
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 18px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.active {
+  color: #fed136 !important;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link {
+  color: #fed136;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.hero-banner {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-image: url(assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-banner h2 {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 35px;
+}
+.hero-banner h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.header-title h1 {
+  text-transform: uppercase;
+  margin-block: 20px;
+}
+.header-title p,
+.modal-title p,
+.portfolios .modal .modal-body p {
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+  color: #6c757d;
+}
+.service .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.service .card .icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fed136;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service .card .icon i {
+  font-size: 60px;
+  color: #fff;
+}
+.service .card .card-body .card-title {
+  margin-block: 0 20px;
+}
+.service .card .card-body .text {
+  font-family: "Roboto Slab", serif;
+  color: #6c757d;
+}
+.portfolios {
+  background-color: #f8f9fa;
+}
+.portfolios .card {
+  border: 0;
+  border-radius: 0;
+}
+.portfolios .card .card-body {
+  text-align: center;
+}
+.portfolios .card .image {
+  height: 300px;
+  position: relative;
+}
+.portfolios .card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolios .card .image .btn-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #e8b602bf;
+  opacity: 0;
+  transition: 0.3s;
+}
+.portfolios .card .image .btn-hover i {
+  font-size: 60px;
+  color: #fff;
+}
+.portfolios .card .image:hover .btn-hover {
+  opacity: 1;
+}
+
+.modal-fullscreen {
+  width: 95%;
+  height: 95%;
+  margin: 1.2% auto;
+}
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.btn-close {
+  font-size: 40px;
+}
+.portfolios .card .card-body .text {
+  font-style: italic;
+  font-family: "Roboto Slab", serif;
+  color: #6c757d;
+}
+.portfolios .modal .modal-body .modal-text {
+  margin-block: 30px;
+}
+.portfolios .modal .modal-body p {
+  font-style: normal;
+  color: #000;
+}
+.portfolios .modal .modal-body p span {
+  font-weight: bold;
+}
+.about .timeline li {
+  width: 50%;
+  display: flex;
+}
+.about .timeline li .timeline-text {
+  text-align: end;
+}
+.about .timeline li .image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  transform: translateX(80px);
+  border: 5px solid #e9ecef;
+}
+.about .timeline li .image {
+  position: relative;
+}
+.about .timeline li .image::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  width: 3px;
+  height: 100%;
+  background-color: #e9ecef;
+}
+.about .timeline li.right {
+  display: flex;
+  flex-direction: row-reverse;
+  float: right;
+  margin-top: 80px;
+}
+.about .timeline li.right .timeline-text {
+  text-align: start;
+}
+
+.about .timeline li.right .image img {
+  transform: translateX(-80px);
+}
+.about .timeline li.right .image {
+  position: relative;
+}
+.about .timeline li.right .image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 3px;
+  height: 100%;
+  background-color: #e9ecef;
+}
+.clear {
+  clear: both;
+}
+.about .timeline li:last-child {
+  display: flex;
+  justify-content: end;
+  margin-top: 90px;
+}
+.about .timeline li:last-child .image::before {
+  display: none;
+}
+.about .timeline li:last-child .image {
+  width: 160px;
+  height: 160px;
+  background-color: #ffc800;
+  transform: translateX(80px);
+  border-radius: 50%;
+  border: 5px solid #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amazing-team {
+  background-color: #f8f9fa;
+}
+.amazing-team .card {
+  border: 0;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.amazing-team .card .image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #dfe0e1;
+}
+.amazing-team .card .card-body {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.amazing-team .card .card-body .media {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.amazing-team .card .card-body .media .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amazing-team .card .card-body .media .icon i {
+  color: #fff;
+}
+
+footer .media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer .media .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .media .icon i {
+  color: #fff;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 25px 15px;
+}

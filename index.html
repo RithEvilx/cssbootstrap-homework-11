@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sok Sovannarith, Homework-11</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- Font-Family -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- FontAwsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="scroll-spy">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h4>Start Bootstrap</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bar text-white border border-2 p-2 rounded-3">MENU <i class="fa-solid fa-bars text-white"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="hero-banner text-center">
+          <h2>Welcome To Our Studio</h2>
+          <h1>It's Nice To Meet You</h1>
+          <a href="#services" type="button" class="btn btn-warning text-white fw-bold text-uppercase py-4 px-5 mt-5">
+            Tell Me More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main data-bs-spy="scroll" data-bs-target="#scroll-spy" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" tabindex="0">
+    <!-- Services -->
+    <section class="service" id="services">
+      <div class="container p-5">
+        <div class="row">
+          <div class="header-title text-center">
+            <h1 class="title">Services</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="service-box d-flex mt-5">
+            <div class="col-xl-4">
+              <div class="card">
+                <div class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    E-Commerce
+                  </h4>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, Minima maxime quama architecto quo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="card">
+                <div class="icon">
+                  <i class="fa-solid fa-laptop"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Responsive Design
+                  </h4>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, Minima maxime quama architecto quo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div class="card">
+                <div class="icon">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Web Security
+                  </h4>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, Minima maxime quama architecto quo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="portfolios" id="portfolio">
+      <div class="container p-5">
+        <div class="row">
+          <div class="services-title text-center pb-5">
+            <h1 class="title">Portfolio</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="row d-flex flex-wrap row-gap-4 pb-5">
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/portfolio/1.jpg" alt="1.jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#card-1">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-title" id="exampleModalLabel">
+                          <h1 class="text-uppercase ">Project Name</h1>
+                          <p>Lorem ipsum dolor sit amet consectrtur</p>
+                        </div>
+                      </div>
+                      <div class="modal-body d-flex flex-column justify-content-center align-items-center ">
+                        <div class="image">
+                          <img src="assets/img/portfolio/1.jpg" alt="1.jpg">
+                        </div>
+                        <div class="modal-text text-center">
+                          <p class="text">
+                            Use this area to describe your project. Lorem ipsum dolor sit amet, <br>
+                            consecteutr adipisicing elit. Est blanditiis dolorem cilpa <br>
+                            inidunt miunus degmision deserunt repoellat
+                          </p>
+                          <p>
+                            <span>Client:</span>
+                            Threads
+                          </p>
+                          <p>
+                            <span>Cagrgory:</span>
+                            Illustration
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-warning text-uppercase text-white fw-bold p-4"
+                          data-bs-dismiss="modal">Close Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Threads
+                </h4>
+                <p class="text">
+                  Illustration
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/portfolio/2.jpg" alt="2.jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#card-2">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-title" id="exampleModalLabel">
+                          <h1 class="text-uppercase ">Project Name</h1>
+                          <p>Lorem ipsum dolor sit amet consectrtur</p>
+                        </div>
+                      </div>
+                      <div class="modal-body d-flex flex-column justify-content-center align-items-center ">
+                        <div class="image">
+                          <img src="assets/img/portfolio/2.jpg" alt="2.jpg">
+                        </div>
+                        <div class="modal-text text-center">
+                          <p class="text">
+                            Use this area to describe your project. Lorem ipsum dolor sit amet, <br>
+                            consecteutr adipisicing elit. Est blanditiis dolorem cilpa <br>
+                            inidunt miunus degmision deserunt repoellat
+                          </p>
+                          <p>
+                            <span>Client:</span>
+                            Explore
+                          </p>
+                          <p>
+                            <span>Cagrgory:</span>
+                            Graphic Design
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-warning text-uppercase text-white fw-bold p-4"
+                          data-bs-dismiss="modal">Close Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Explore
+                </h4>
+                <p class="text">
+                  Graphic Design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/portfolio/3.jpg" alt="3.jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#card-3">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-title" id="exampleModalLabel">
+                          <h1 class="text-uppercase ">Project Name</h1>
+                          <p>Lorem ipsum dolor sit amet consectrtur</p>
+                        </div>
+                      </div>
+                      <div class="modal-body d-flex flex-column justify-content-center align-items-center ">
+                        <div class="image">
+                          <img src="assets/img/portfolio/3.jpg" alt="3.jpg">
+                        </div>
+                        <div class="modal-text text-center">
+                          <p class="text">
+                            Use this area to describe your project. Lorem ipsum dolor sit amet, <br>
+                            consecteutr adipisicing elit. Est blanditiis dolorem cilpa <br>
+                            inidunt miunus degmision deserunt repoellat
+                          </p>
+                          <p>
+                            <span>Client:</span>
+                            Finish
+                          </p>
+                          <p>
+                            <span>Cagrgory:</span>
+                            Identity
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-warning text-uppercase text-white fw-bold p-4"
+                          data-bs-dismiss="modal">Close Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Finish
+                </h4>
+                <p class="text">
+                  Identity
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/portfolio/4.jpg" alt="4.jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#card-4">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-title" id="exampleModalLabel">
+                          <h1 class="text-uppercase ">Project Name</h1>
+                          <p>Lorem ipsum dolor sit amet consectrtur</p>
+                        </div>
+                      </div>
+                      <div class="modal-body d-flex flex-column justify-content-center align-items-center ">
+                        <div class="image">
+                          <img src="assets/img/portfolio/4.jpg" alt="4.jpg">
+                        </div>
+                        <div class="modal-text text-center">
+                          <p class="text">
+                            Use this area to describe your project. Lorem ipsum dolor sit amet, <br>
+                            consecteutr adipisicing elit. Est blanditiis dolorem cilpa <br>
+                            inidunt miunus degmision deserunt repoellat
+                          </p>
+                          <p>
+                            <span>Client:</span>
+                            Lines
+                          </p>
+                          <p>
+                            <span>Cagrgory:</span>
+                            Branding
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-warning text-uppercase text-white fw-bold p-4"
+                          data-bs-dismiss="modal">Close Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Lines
+                </h4>
+                <p class="text">
+                  Branding
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/portfolio/5.jpg" alt="5.jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#card-5">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-title" id="exampleModalLabel">
+                          <h1 class="text-uppercase ">Project Name</h1>
+                          <p>Lorem ipsum dolor sit amet consectrtur</p>
+                        </div>
+                      </div>
+                      <div class="modal-body d-flex flex-column justify-content-center align-items-center ">
+                        <div class="image">
+                          <img src="assets/img/portfolio/5.jpg" alt="5.jpg">
+                        </div>
+                        <div class="modal-text text-center">
+                          <p class="text">
+                            Use this area to describe your project. Lorem ipsum dolor sit amet, <br>
+                            consecteutr adipisicing elit. Est blanditiis dolorem cilpa <br>
+                            inidunt miunus degmision deserunt repoellat
+                          </p>
+                          <p>
+                            <span>Client:</span>
+                            Southwest
+                          </p>
+                          <p>
+                            <span>Cagrgory:</span>
+                            Website Design
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-warning text-uppercase text-white fw-bold p-4"
+                          data-bs-dismiss="modal">Close Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Southwest
+                </h4>
+                <p class="text">
+                  Website Design
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-12">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/portfolio/6.jpg" alt="6.jpg">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#card-6">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="card-6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-title" id="exampleModalLabel">
+                          <h1 class="text-uppercase ">Project Name</h1>
+                          <p>Lorem ipsum dolor sit amet consectrtur</p>
+                        </div>
+                      </div>
+                      <div class="modal-body d-flex flex-column justify-content-center align-items-center ">
+                        <div class="image">
+                          <img src="assets/img/portfolio/6.jpg" alt="6.jpg">
+                        </div>
+                        <div class="modal-text text-center">
+                          <p class="text">
+                            Use this area to describe your project. Lorem ipsum dolor sit amet, <br>
+                            consecteutr adipisicing elit. Est blanditiis dolorem cilpa <br>
+                            inidunt miunus degmision deserunt repoellat
+                          </p>
+                          <p>
+                            <span>Client:</span>
+                            Window
+                          </p>
+                          <p>
+                            <span>Cagrgory:</span>
+                            Photography
+                          </p>
+                        </div>
+                        <button type="button" class="btn btn-warning text-uppercase text-white fw-bold p-4"
+                          data-bs-dismiss="modal">Close Project</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">
+                  Window
+                </h4>
+                <p class="text">
+                  Photography
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container p-5 ">
+        <div class="row">
+          <div class="header-title text-center">
+            <h1 class="title">About</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="timeline pt-5">
+            <li>
+              <div class="timeline-text">
+                <h4>2009-2011</h4>
+                <h4>Our Humble Beginnings</h4>
+                <p>
+                  this area to describe your project. Lorem ipsum dolor,
+                  consecteutr adipisicing elit. Est blanditiis dolorem cilpa
+                  inidunt miunus degmision deserunt repoellat dipisicing elit.
+                  elit.
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/img/about/1.jpg" alt="1">
+              </div>
+            </li>
+            <li class="right">
+              <div class="timeline-text">
+                <h4>2009-2011</h4>
+                <h4>Our Humble Beginnings</h4>
+                <p>
+                  this area to describe your project. Lorem ipsum dolor,
+                  consecteutr adipisicing elit. Est blanditiis dolorem cilpa
+                  inidunt miunus degmision deserunt repoellat dipisicing elit.
+                  elit.
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/img/about/2.jpg" alt="2">
+              </div>
+            </li>
+            <div class="clear"></div>
+            <li>
+              <div class="timeline-text">
+                <h4>2009-2011</h4>
+                <h4>Our Humble Beginnings</h4>
+                <p>
+                  this area to describe your project. Lorem ipsum dolor,
+                  consecteutr adipisicing elit. Est blanditiis dolorem cilpa
+                  inidunt miunus degmision deserunt repoellat dipisicing elit.
+                  elit.
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/img/about/3.jpg" alt="3">
+              </div>
+            </li>
+            <li class="right">
+              <div class="timeline-text">
+                <h4>2009-2011</h4>
+                <h4>Our Humble Beginnings</h4>
+                <p>
+                  this area to describe your project. Lorem ipsum dolor,
+                  consecteutr adipisicing elit. Est blanditiis dolorem cilpa
+                  inidunt miunus degmision deserunt repoellat dipisicing elit.
+                  elit.
+                </p>
+              </div>
+              <div class="image">
+                <img src="assets/img/about/4.jpg" alt="4">
+              </div>
+            </li>
+            <div class="clear"></div>
+            <li>
+              <div class="timeline-text">
+                <div class="image fw-bold text-white">
+                  Be Part <br>
+                  Of Our <br>
+                  Story!
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Amazing Team -->
+    <section class="amazing-team" id="team">
+      <div class="container p-5">
+        <div class="row">
+          <div class="header-title text-center">
+            <h1 class="title">Our Amazing Team</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between mt-5 ">
+          <div class="col-xl-3">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/team/1.jpg" alt="1">
+              </div>
+              <div class="card-body text-center ">
+                <h4 class="card-title">Parveen Anand</h4>
+                <p class="text">Lead Designer</p>
+                <div class="media">
+                  <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/team/2.jpg" alt="2">
+              </div>
+              <div class="card-body text-center ">
+                <h4 class="card-title">Parveen Anand</h4>
+                <p class="text">Lead Designer</p>
+                <div class="media">
+                  <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="card">
+              <div class="image">
+                <img src="assets/img/team/3.jpg" alt="3">
+              </div>
+              <div class="card-body text-center ">
+                <h4 class="card-title">Parveen Anand</h4>
+                <p class="text">Lead Designer</p>
+                <div class="media">
+                  <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-5 pb-5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ewaque, laboriosam veritastis quos non quis ad
+          perspiciati, toma corporis.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer-box">
+          <div class="col-xl-3">
+            <p>Copyright &copy; Your Website 2023</p>
+          </div>
+          <div class="col-xl-3">
+            <div class="media">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <p>Privacy Policy &nbsp; Terms of Use</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
